@@ -19,7 +19,7 @@ data_branch="$BRANCH_RISE_OF_ROME"
 if [ "$data_branch" = "$BRANCH_RISE_OF_ROME" ]; then
     if [ -f "$BRANCH_RISE_OF_ROME" ]; then
         cp -f "$BRANCH_RISE_OF_ROME" "$TARGET"
-        echo "$(date --iso=s) switched to Rise of Rome v1.0 data file."
+        echo "$(date +%Y-%m-%dT%H:%M:%S%z) switched to Rise of Rome v1.0 data file."
     else
         echo "ERROR: file not found: $BRANCH_RISE_OF_ROME"
         exit 1
@@ -27,7 +27,7 @@ if [ "$data_branch" = "$BRANCH_RISE_OF_ROME" ]; then
 elif [ "$data_branch" = "$BRANCH_DEFINITIVE" ]; then
     if [ -f "$BRANCH_DEFINITIVE" ]; then
         cp -f "$BRANCH_DEFINITIVE" "$TARGET"
-        echo "$(date --iso=s) switched to Definitive Edition data file."
+        echo "$(date +%Y-%m-%dT%H:%M:%S%z) switched to Definitive Edition data file."
     else
         echo "ERROR: file not found: $BRANCH_DEFINITIVE"
         exit 1
@@ -35,7 +35,7 @@ elif [ "$data_branch" = "$BRANCH_DEFINITIVE" ]; then
 elif [ "$data_branch" = "$BRANCH_MACE_OVERPOWERED" ]; then
     if [ -f "$BRANCH_MACE_OVERPOWERED" ]; then
         cp -f "$BRANCH_MACE_OVERPOWERED" "$TARGET"
-        echo "$(date --iso=s) switched to Overpowered Macedonian data file."
+        echo "$(date +%Y-%m-%dT%H:%M:%S%z) switched to Overpowered Macedonian data file."
     else
         echo "ERROR: file not found: $BRANCH_MACE_OVERPOWERED"
         exit 1

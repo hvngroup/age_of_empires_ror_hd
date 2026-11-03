@@ -27,6 +27,19 @@ In the future, the latest balances will be considered the default.
 Guides on how to edit computer player behavior are in the directory
 [data2_daominah/doc](data2_daominah/doc/edit_computer_player.md).
 
+### Run on macOS
+
+Use [hvngroup/mac-aoe](https://github.com/hvngroup/mac-aoe): it installs Wine,
+copies this game into its own Wine prefix, writes the registry that `SETUP.EXE`
+would write, and builds an `AoE RoR.app` launcher (single player, multiplayer,
+balance switch, windowed or fullscreen). Intel and Apple Silicon Macs are supported.
+
+```bash
+git clone https://github.com/hvngroup/mac-aoe.git ~/mac-aoe
+~/mac-aoe/aoe-mac setup
+~/mac-aoe/aoe-mac build-app
+```
+
 ## AoE version detail
 
 The game version is The Rise of Rome 1.0.
